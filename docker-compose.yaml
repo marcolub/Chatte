@@ -18,6 +18,8 @@ services:
       - redis
     networks:
       - data_sharing
+    ports:
+      - "4444:4444"
   subscriber:
       build:
         context: ./subscriber
